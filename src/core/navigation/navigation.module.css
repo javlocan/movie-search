@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  position: fixed;
+  z-index:9999;
+
+  width: 100vw;
+  height:4rem;
+  padding:1rem;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+
+  background-color: black;
+  color: white;
+  box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.5);
+
+}
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap:2rem;
+}
+
+.nav a {
+  font-weight: 900;
+  text-decoration: none;
+  color:rgb(50, 153, 119)
+}

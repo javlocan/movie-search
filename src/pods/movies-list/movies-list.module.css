@@ -1,0 +1,12 @@
+.list {
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows:22rem;
+  grid-template-columns: repeat(99999999999, minmax(12rem, 1fr));
+  padding:1rem;
+}
+
+.list div{
+  color:white;
+  text-shadow: 0px 0px 10px black;
+}

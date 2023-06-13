@@ -9,8 +9,8 @@ export default function About (): JSX.Element {
   return (
     <>
       <h1>Wellcome to about, {userInfo}!</h1>
-      <Link href="/post-list">
-        <button>Go to post list! </button>
+      <Link href="/movies">
+        <button>Search movies </button>
       </Link>
     </>
   )

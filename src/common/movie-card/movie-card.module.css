@@ -1,0 +1,48 @@
+.card {
+  font-family: 'Courier New', Courier, monospace;
+
+  height:36vh;
+  aspect-ratio: 3/4;
+  grid-column: span 1;
+  border-radius:10px;
+  background-color: rgb(80, 80, 80)!important;
+/*   background-blend-mode: multiply; */
+
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: translate 0.1s ease-in-out;
+}
+.card:hover {
+  translate:0 calc(-10%)
+}
+
+.card:hover > .caption p{
+
+  height: auto;
+}
+.caption p {
+  font-size: 20px;
+  font-style: italic;
+
+}
+
+.caption{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding:1rem;
+  border-radius: 0px 0px 10px 10px;
+  width:100%;
+  min-height:10vh;
+  background-color: rgba(0 0 0 / 0.6);
+}
+.caption h1 {
+  font-size: 1.4vw;
+  font-weight: 900;
+}
+
+
+

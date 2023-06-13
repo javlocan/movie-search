@@ -1,6 +1,7 @@
 import './globals.css'
 
 import { AuthProvider } from '../core/auth/auth.context'
+import { NavigationContainer } from '../core/navigation/navigation.container'
 
 export const metadata = {
   title: 'Project X',
@@ -16,7 +17,10 @@ export default function RootLayout ({
     <html lang="en">
       <body>
         <AuthProvider>
+          <NavigationContainer/>
+          <main>
         {children}
+        </main>
         </AuthProvider>
         </body>
     </html>
