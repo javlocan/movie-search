@@ -11,7 +11,6 @@ export const MoviesList = (props: Props): JSX.Element => {
     {list.map((movie) =>
        <MovieCard
             movie={movie}
-            id={movie._id.toString()}
             key={movie._id.toString()}
         />)
       }

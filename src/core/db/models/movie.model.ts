@@ -1,9 +1,9 @@
-import { type IGETMovie } from '@/src/pods/movies-list/api/api.model'
+import { type IMovie } from '@/src/core/getMoviesList/api/api.model'
 import mongoose from 'mongoose'
 
 const { Schema } = mongoose
 
-const userSchema = new Schema<IGETMovie>({
+const userSchema = new Schema<IMovie>({
   _id: { $oid: { type: String } },
   plot: { type: String },
   genres: [{ type: String }],

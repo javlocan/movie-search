@@ -7,7 +7,7 @@ import { type NextRequest, NextResponse } from 'next/server'
 
 export async function GET (request: NextRequest): Promise<NextResponse> {
   const searchParams = request.nextUrl.searchParams
-  const filter: [Record<string, string | string[]>] = []
+  const filter: any[] = []
 
   const q = parseInt(searchParams.get('q') ?? '7')
   const p = parseInt(searchParams.get('p') ?? '0')
@@ -17,7 +17,7 @@ export async function GET (request: NextRequest): Promise<NextResponse> {
   if (genre) filter.push({ genres: [genre] })
 
   const rating = searchParams.get('rating')
-  if (rating) filter.push({ 'imdb.rating': rating })
+  if (rating) filter.push({ 'imdb.rating': { $gte: rating } })
 
   console.log('see filter', filter)
 
