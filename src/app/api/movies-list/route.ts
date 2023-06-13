@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/strict-boolean-expressions */
-'use server'
 
 import dbConnect from '@/src/core/db/dbConnect'
 
