@@ -6,5 +6,5 @@ export const getMoviesList = async (query: string): Promise<IMovie[]> => {
   console.log('QUERY:', query)
 
   return await fetch('http://localhost:3000/api/movies-list' + query,
-    { method: 'GET', headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' } }).then(async res => await res.json())
+    { method: 'GET' }).then(async res => await res.json())
 }
